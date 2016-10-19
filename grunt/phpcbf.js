@@ -2,7 +2,7 @@
 // https://github.com/mducharme/grunt-phpcbf
 
 module.exports = {
-    theme: {
+    plugin: {
         options: {
             standard: 'phpcs.xml'
         },

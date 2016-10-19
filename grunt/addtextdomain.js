@@ -5,7 +5,7 @@ module.exports = {
         options: {
             textdomain: '<%= package.textdomain %>',
         },
-        theme: {
+        plugin: {
             files: {
                 src: [
                     '<%= files.php %>'

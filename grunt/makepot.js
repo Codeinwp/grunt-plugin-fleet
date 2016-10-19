@@ -1,7 +1,7 @@
 /* jshint node:true */
 // https://github.com/blazersix/grunt-wp-i18n
 module.exports = {
-    theme: {
+    plugin: {
         options: {
             domainPath: '<%= paths.languages %>',
             potFilename: '<%= package.textdomain %>.pot',
@@ -11,7 +11,7 @@ module.exports = {
                 'language-team': '<%= package.pot.languageteam %>',
                 'last-translator': '<%= package.pot.lasttranslator %>'
             },
-            type: 'wp-theme'
+            type: 'wp-plugin'
         },
     },
 };

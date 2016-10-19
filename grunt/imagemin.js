@@ -2,7 +2,7 @@
 // https://github.com/gruntjs/grunt-contrib-imagemin
 
 module.exports = {
-    theme: {
+    plugin: {
         files: [ {
             expand: true,
             // this would require the addition of a assets folder from which the images are

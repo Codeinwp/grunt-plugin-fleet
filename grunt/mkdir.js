@@ -5,11 +5,5 @@ module.exports = {
         options: {
             create: ['logs']
         }
-    },
-
-    lite: {
-        options: {
-            create: ['../<%= package.name %>-lite']
-        }
     }
 };

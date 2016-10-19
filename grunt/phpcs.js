@@ -4,7 +4,7 @@ module.exports = {
     options: {
         ignoreExitCode: true
     },
-    theme: {
+    plugin: {
         options: {
             standard: 'phpcs.xml',
             reportFile: '<%= paths.logs %>phpcs.log',
