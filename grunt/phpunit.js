@@ -2,7 +2,7 @@
 module.exports = {
     plugin: {
         options: {
-            configuration: 'tests/phpunit.xml',
+            configuration: 'phpunit.xml',
         }
     }
 };
