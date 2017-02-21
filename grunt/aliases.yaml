@@ -12,6 +12,7 @@ check:
 'check:php':
   - 'phplint'
   - 'phpcs'
+  - 'phpunit'
 'check:js':
   - 'jshint'
 'check:i18n':
