@@ -16,7 +16,6 @@ module.exports = function (grunt, options) {
                         //console.log(exclude);
                         var cwd = grunt.file.read('.distignore').split(/\r|\n/);
                         cwd = cwd.filter(function(e){return e});
-                        console.log(filepath);
                         for(index in cwd){
                             var file = cwd[index];
                             if (filepath.indexOf(file) === 0 ){
