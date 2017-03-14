@@ -3,7 +3,7 @@ module.exports = function (grunt, options) {
     return {
         main: {
             options: {
-                archive: '<%= package.name %>.zip',
+                archive: 'release/<%= package.name %>.zip',
             }
             ,
             files: [

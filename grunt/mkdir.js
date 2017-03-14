@@ -5,5 +5,10 @@ module.exports = {
         options: {
             create: ['logs']
         }
+    },
+    release: {
+        options: {
+            create: ['release']
+        }
     }
 };
