@@ -34,5 +34,4 @@ travis:
 
 deploy:
   - 'mkdir:release'
-  - 'shell'
   - 'compress'
