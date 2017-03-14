@@ -2,9 +2,9 @@
 
 module.exports = {
     set_repo: {
-        command: 'export THEMEISLE_REPO=<%= package.name %>.'
+        command: 'THEMEISLE_REPO=<%= package.name %>'
     },
     set_version: {
-        command: 'export THEMEISLE_VERSION=<%= package.version %>.'
+        command: 'export THEMEISLE_VERSION=<%= package.version %>'
     }
 };
