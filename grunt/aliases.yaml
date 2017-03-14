@@ -33,4 +33,5 @@ travis:
   - 'check:i18n'
 
 deploy:
+  - 'shell'
   - 'compress'
