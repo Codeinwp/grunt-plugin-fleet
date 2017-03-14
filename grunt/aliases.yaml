@@ -31,3 +31,6 @@ travis:
   - 'check:php'
   - 'check:js'
   - 'check:i18n'
+
+deploy:
+  - 'compress'
