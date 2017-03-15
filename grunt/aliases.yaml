@@ -33,5 +33,7 @@ travis:
   - 'check:i18n'
 
 deploy:
-  - 'mkdir:release'
+  - 'mkdir:dist'
+  - 'mkdir:artifact'
+  - 'copy:deploy'
   - 'compress'

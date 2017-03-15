@@ -6,9 +6,14 @@ module.exports = {
             create: ['logs']
         }
     },
-    release: {
+    dist: {
         options: {
-            create: ['release']
+            create: ['dist']
+        }
+    },
+    artifact: {
+        options: {
+            create: ['artifact']
         }
     }
 };
