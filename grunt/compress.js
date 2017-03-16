@@ -8,26 +8,11 @@ module.exports = function (grunt, options) {
             ,
             files: [
                 {
-                    cwd: '.',
-                    src: ['dist/**','!artifact','!dist'],
-                    dest: '<%= package.name %>/',
-                    filter: function (filepath) {
-                        // var exclude = grunt.file.read('.distignore');
-                        //console.log(exclude);
-                        var cwd = grunt.file.read('.distignore').split(/\r|\n/);
-                        cwd = cwd.filter(function(e){return e});
-                        for(index in cwd){
-                            var file = cwd[index];
-                            if (filepath.indexOf(file) === 0 ){
-                                return false;
-                            }
-                        }
-                        return true;
-                    },
+                    cwd: 'dist/',
+                    src: ['**'],
+                    dest: '<%= package.name %>/'
                 },
             ],
         }
     };
-};/**
- * Created by mariu on 14/03/2017.
- */
+};
