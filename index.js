@@ -21,6 +21,7 @@ module.exports = function () {
 
     project.taskMap = {
         wpcss: 'grunt-wp-css',
+        sftp: 'grunt-ssh',
         addtextdomain: 'grunt-wp-i18n',
         litedomain: 'grunt-wp-i18n',
         makepot: 'grunt-wp-i18n',

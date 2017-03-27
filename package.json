@@ -30,6 +30,7 @@
     "time-grunt": "^1.4.0",
     "grunt-contrib-compress": "^1.4.1",
     "grunt-phpunit": "^0.3.6",
+    "grunt-ssh": "^0.12.9",
     "grunt-contrib-copy": "^1.0.0"
   }
 }
