@@ -1,8 +1,8 @@
 /**
  * https://github.com/israelroldan/grunt-ssh
  */
-module.exports = {
-    sftp: {
+module.exports = function (grunt, options) {
+    return {
         deploy: {
             files: {
                 './': ['dist/.*', 'dist/**']
