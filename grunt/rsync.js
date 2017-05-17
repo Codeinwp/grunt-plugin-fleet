@@ -3,6 +3,7 @@ module.exports = function (grunt, options) {
     return {
             options: {
                 args: ["--verbose"],
+                sshCmdArgs : [["-o StrictHostKeyChecking=no"]],
                 recursive: true
             },
             start: {
