@@ -10,6 +10,7 @@ module.exports = function (grunt, options) {
                 {
                     cwd: 'dist/',
                     src: ['**'],
+                    expand: true,
                     dest: '<%= package.name %>/'
                 },
             ],
