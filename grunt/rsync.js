@@ -9,7 +9,7 @@ module.exports = function (grunt, options) {
 		start: {
 			options: {
 				src: ".maintenance",
-				port: (process.env.DEMO_THEMEISLE_PORT) ? DEMO_THEMEISLE_PORT : 22,
+				port: (process.env.DEMO_THEMEISLE_PORT) ? process.env.DEMO_THEMEISLE_PORT : 22,
 				dest: process.env.DEMO_ROOT,
 				host: process.env.DEMO_THEMEISLE_USER + "@" + process.env.DEMO_THEMEISLE_HOST,
 				delete: true // Careful this option could cause data loss, read the docs!
@@ -18,7 +18,7 @@ module.exports = function (grunt, options) {
 		prod: {
 			options: {
 				src: "dist/",
-				port: (process.env.DEMO_THEMEISLE_PORT) ? DEMO_THEMEISLE_PORT : 22,
+				port: (process.env.DEMO_THEMEISLE_PORT) ? process.env.DEMO_THEMEISLE_PORT : 22,
 				dest: process.env.DEMO_THEMEISLE_PATH,
 				host: process.env.DEMO_THEMEISLE_USER + "@" + process.env.DEMO_THEMEISLE_HOST,
 				delete: true // Careful this option could cause data loss, read the docs!
@@ -27,7 +27,7 @@ module.exports = function (grunt, options) {
 		end: {
 			options: {
 				src: ".maintenance",
-				port: (process.env.DEMO_THEMEISLE_PORT) ? DEMO_THEMEISLE_PORT : 22,
+				port: (process.env.DEMO_THEMEISLE_PORT) ? process.env.DEMO_THEMEISLE_PORT : 22,
 				dest: process.env.DEMO_ROOT,
 				host: process.env.DEMO_THEMEISLE_USER + "@" + process.env.DEMO_THEMEISLE_HOST,
 				delete: true // Careful this option could cause data loss, read the docs!
