@@ -25,6 +25,12 @@ live:
 # Default task
 default:
   - check
+local:
+  - 'phpcbf'
+  - 'mkdir:logs'
+  - 'check:php'
+  - 'check:js'
+  - 'check:i18n'
 
 travis:
   - 'mkdir:logs'
