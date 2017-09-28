@@ -7,6 +7,7 @@ module.exports = {
     plugin: {
         options: {
             standard: 'phpcs.xml',
+	        showSniffCodes : true,
             reportFile: '<%= paths.logs %>phpcs.log',
             extensions: 'php'
         },
