@@ -28,7 +28,8 @@ default:
 local:
   - 'phpcbf'
   - 'mkdir:logs'
-  - 'check:php'
+  - 'phplint'
+  - 'phpcs'
   - 'check:js'
   - 'check:i18n'
 
