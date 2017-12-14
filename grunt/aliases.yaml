@@ -45,3 +45,6 @@ deploy:
   - 'copy:deploy'
   - 'compress'
   - 'hash'
+
+testing:
+  - 'hash'    
