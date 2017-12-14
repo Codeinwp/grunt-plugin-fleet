@@ -44,7 +44,4 @@ deploy:
   - 'mkdir:artifact'
   - 'copy:deploy'
   - 'compress'
-  - 'hash'
-
-testing:
-  - 'hash'    
+  - 'cachebuster'
