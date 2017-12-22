@@ -40,8 +40,8 @@ travis:
   - 'check:i18n'
 
 deploy:
+  - 'cachebuster'
   - 'mkdir:dist'
   - 'mkdir:artifact'
   - 'copy:deploy'
   - 'compress'
-  - 'cachebuster'
