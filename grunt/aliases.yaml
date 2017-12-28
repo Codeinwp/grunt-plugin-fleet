@@ -38,8 +38,12 @@ travis:
   - 'check:php'
   - 'check:js'
   - 'check:i18n'
+pre_deploy:
+  description: "Pre deploy custom tasks"
+  tasks: []
 
 deploy:
+  - 'pre_deploy'
   - 'cachebuster'
   - 'mkdir:dist'
   - 'mkdir:artifact'
