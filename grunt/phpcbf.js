@@ -4,7 +4,8 @@
 module.exports = {
     plugin: {
         options: {
-            standard: 'phpcs.xml'
+            standard: 'phpcs.xml',
+	        noPatch:false
         },
         files: {
             src:['<%= files.php %>']
