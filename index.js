@@ -60,6 +60,7 @@ module.exports = function () {
         '!**/*.min.js',
         '!.git/**',
         '!vendor/**',
+        '!dist/**',
         '!js/vendor/*.js',
         '!node_modules/**',
         '!logs/**'
