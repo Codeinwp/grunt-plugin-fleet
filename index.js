@@ -61,6 +61,7 @@ module.exports = function () {
         '!.git/**',
         '!vendor/**',
         '!dist/**',
+        '!build/**',
         '!js/vendor/*.js',
         '!node_modules/**',
         '!logs/**'
