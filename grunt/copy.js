@@ -2,6 +2,8 @@
  * https://github.com/gruntjs/grunt-contrib-copy
  */
 
+var ignore = require('ignore');
+
 module.exports = function (grunt, options) {
 	return {
 		deploy: {
@@ -10,26 +12,19 @@ module.exports = function (grunt, options) {
 				dest: 'dist/',
 				filter: function (filepath) {
 					var unixifyPath = function (filepath) {
-
 						var isWindows = process.platform === 'win32';
-						if (isWindows) {
-							return filepath.replace(/\\/g, '/');
-						} else {
-							return filepath;
-						}
+						return isWindows ? filepath.replace(/\\/g, '/') : filepath;
 					};
+
 					filepath = unixifyPath(filepath);
-					var exclude = grunt.file.read('.distignore');
-					var cwd = grunt.file.read('.distignore').split(/\r|\n/);
-					cwd = cwd.filter(function (e) {
-						return e
-					});
-					for (index in cwd) {
-						var file = cwd[index];
-						if (filepath.indexOf(file) === 0) {
-							return false;
-						}
+
+					var distignore = grunt.file.read('.distignore').split(/\r|\n/);
+					var ig = ignore().add( distignore );
+
+					if ( ig.ignores( filepath ) ) {
+						return false;
 					}
+
 					return true;
 				}
 			}]
